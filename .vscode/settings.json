@@ -1,0 +1,11 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "steel/crates/host/Cargo.toml",
+        "steel/crates/guests/Cargo.toml",
+        "steel/crates/guests/eip-1271/Cargo.toml"
+    ],
+    "rust-analyzer.check.extraEnv": {
+        "RISC0_SKIP_BUILD": "1",
+        "RISC0_SKIP_BUILD_KERNELS": "1"
+    }
+}

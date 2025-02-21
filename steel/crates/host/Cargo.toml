@@ -1,0 +1,21 @@
+[package]
+name = "host"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+guests = { workspace = true }
+
+alloy = { workspace = true, features = ["signers", "full"] }
+alloy-primitives = { workspace = true }
+anyhow = { workspace = true }
+base64 = "0.22.1"
+borsh = "1.5.5"
+clap = { workspace = true, features = ["derive", "env"] }
+revm = { workspace = true }
+risc0-steel = { workspace = true, features = ["host"] }
+risc0-zkvm = { workspace = true, default-features = true }
+tokio = { workspace = true, features = ["full"] }
+tracing-subscriber = { workspace = true, features = ["env-filter"] }
+url = { workspace = true }
